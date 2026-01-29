@@ -1,0 +1,10 @@
+1. Logo
+2. Images
+3. Maps	
+4. Contact Us Details
+
+=====
+ON MOBILE
+=====
+1. About us spacing
+2. Bento Grid font color and size 

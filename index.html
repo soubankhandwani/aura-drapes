@@ -1,0 +1,501 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aura Drapes | Elegant Home Furnishings</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./public/css/styles.css" />
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <div class="logo">
+        <img src="public/logo.png" alt="Aura Drapes" />
+      </div>
+
+      <div class="nav-actions">
+        <div class="nav-links">
+          <a href="#">Home</a>
+          <a href="#about">About</a>
+          <a href="#collection">Collection</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <div class="theme-toggle" id="theme-toggle">
+          <i class="fas fa-moon"></i>
+        </div>
+
+        <div class="mobile-menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section">
+      <div class="carousel-track" id="track">
+        <div class="slide active">
+          <div class="slide-content">
+            <div class="text-block">
+              <h4>Aura Drapes</h4>
+              <h1>Luxury in<br />Every Layer</h1>
+              <p>
+                Transform your home with our bespoke curtains and blinds.
+                Designed for elegance, crafted for life.
+              </p>
+              <br />
+              <a href="#collection" class="btn btn-primary">View Collection</a>
+            </div>
+            <div class="image-block">
+              <img src="./public/hero1.jpg" alt="Curtains" />
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="slide-content">
+            <div class="text-block">
+              <h4>Modern Blinds</h4>
+              <h1>Sleek &<br />Sophisticated</h1>
+              <p>
+                Privacy meets style. Explore our range of automated and manual
+                blinds.
+              </p>
+              <br />
+              <a href="#collection" class="btn btn-primary">Explore Blinds</a>
+            </div>
+            <div
+              class="image-block"
+              style="background-color: var(--accent-sage)"
+            >
+              <img src="./public/hero2.jpg" alt="Blinds" />
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="slide-content">
+            <div class="text-block">
+              <h4>Premium Mattresses</h4>
+              <h1>Sleep<br />Reimagined</h1>
+              <p>
+                Experience unmatched comfort with mattresses engineered for
+                deep, restorative sleep.
+              </p>
+              <br />
+              <a href="#collection" class="btn btn-primary">Shop Mattresses</a>
+            </div>
+            <div class="image-block">
+              <img src="./public/hero3.jpg" alt="Luxury Mattress" />
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="slide-content">
+            <div class="text-block">
+              <h4>Designer Wallpaper</h4>
+              <h1>Walls<br />With Character</h1>
+              <p>
+                From subtle textures to bold patterns, elevate every room with
+                statement wallpapers.
+              </p>
+              <br />
+              <a href="#collection" class="btn btn-primary"
+                >Browse Wallpapers</a
+              >
+            </div>
+            <div
+              class="image-block"
+              style="background-color: var(--accent-sand)"
+            >
+              <img src="./public/hero4.jpg" alt="Wallpaper Design" />
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="slide-content">
+            <div class="text-block">
+              <h4>Complete Home Styling</h4>
+              <h1>Designed<br />To Belong</h1>
+              <p>
+                Curtains, blinds, wallpapers, and mattresses — thoughtfully
+                curated to create harmony in your home.
+              </p>
+              <br />
+              <a href="#collection" class="btn btn-primary">Discover More</a>
+            </div>
+            <div class="image-block">
+              <img src="./public/hero1.png" alt="Luxury Living Room" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-nav">
+        <div class="carousel-dot active" onclick="updateSlide(0)"></div>
+        <div class="carousel-dot" onclick="updateSlide(1)"></div>
+        <div class="carousel-dot" onclick="updateSlide(2)"></div>
+        <div class="carousel-dot" onclick="updateSlide(3)"></div>
+        <div class="carousel-dot" onclick="updateSlide(4)"></div>
+      </div>
+    </header>
+
+    <!-- About Us Section -->
+    <section class="section-padding container" id="about">
+      <div class="about-premium">
+        <div class="about-layout">
+          <div class="about-visuals reveal">
+            <img
+              src="https://images.unsplash.com/photo-1594040226829-7f251ab46d80?q=80&w=2070&auto=format&fit=crop"
+              class="img-main"
+              alt="Luxury Interior"
+            />
+            <img
+              src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=2158&auto=format&fit=crop"
+              class="img-secondary"
+              alt="Fabric Texture"
+            />
+          </div>
+          <div class="about-narrative reveal">
+            <h2>The Art of <br />Soft Living</h2>
+            <p class="lead">
+              We don't just cover windows; we frame your view of the world.
+            </p>
+            <p>
+              At Aura Drapes, we believe that true luxury lies in comfort.
+              Blending professional craftsmanship with a homely touch, we curate
+              fabrics that transform a house into a sanctuary. Every stitch
+              tells a story of elegance, and every drape is designed to bring
+              warmth to your personal space.
+            </p>
+            <a
+              href="#contact"
+              class="btn btn-primary"
+              style="
+                background: transparent;
+                color: var(--brand-primary);
+                border: 1px solid var(--brand-primary);
+              "
+              >Learn More</a
+            >
+          </div>
+        </div>
+
+        <div class="values-grid-wrapper reveal">
+          <div
+            class="section-header"
+            style="text-align: left; margin-bottom: 30px"
+          >
+            <span>Our Promises</span>
+            <h2>Why Choose Aura?</h2>
+          </div>
+
+          <div class="values-grid">
+            <div class="value-card vc-quality">
+              <div class="vc-num">01</div>
+              <div class="vc-content">
+                <h3>Unmatched Quality</h3>
+                <p>
+                  Premium fabrics sourced from the world's finest mills,
+                  ensuring durability and timeless elegance.
+                </p>
+              </div>
+            </div>
+
+            <div class="value-card vc-consult">
+              <div class="vc-num">02</div>
+              <div class="vc-content">
+                <h3>Expert Design</h3>
+                <p>
+                  Personalized consultation to match your unique home aesthetic
+                  perfectly.
+                </p>
+              </div>
+            </div>
+
+            <div class="value-card vc-install">
+              <div class="vc-num">03</div>
+              <div class="vc-content">
+                <h3>Precision Fit</h3>
+                <p>
+                  Seamless measurement and installation by our experienced
+                  technical team.
+                </p>
+              </div>
+            </div>
+
+            <div class="value-card vc-satisfy">
+              <div class="vc-num">04</div>
+              <div class="vc-content">
+                <h3>Pure Satisfaction</h3>
+                <p>
+                  Dedicated support and warranty until your vision is perfectly
+                  realized in your home.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Collection Section -->
+    <section class="section-padding bg-white-section" id="collection">
+      <div class="container">
+        <div class="section-header reveal">
+          <span>Curated For You</span>
+          <h2>Our Collection</h2>
+        </div>
+
+        <div class="products-grid">
+          <div class="product-card reveal">
+            <div class="product-img">
+              <img
+                src="https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=2069&auto=format&fit=crop"
+                alt="Sheer Curtains"
+              />
+            </div>
+            <div class="product-info">
+              <h3>Sheer Elegance</h3>
+              <span>Curtains</span>
+              <p>Light filtering sheer fabrics for a dreamy vibe.</p>
+            </div>
+          </div>
+          <div class="product-card reveal">
+            <div class="product-img">
+              <img
+                src="https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=2069&auto=format&fit=crop"
+                alt="Blackout Curtains"
+              />
+            </div>
+            <div class="product-info">
+              <h3>Royal Velvet</h3>
+              <span>Blackout</span>
+              <p>Complete privacy with rich, textured velvet.</p>
+            </div>
+          </div>
+          <div class="product-card reveal">
+            <div class="product-img">
+              <img
+                src="https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=2069&auto=format&fit=crop"
+                alt="Roman Blinds"
+              />
+            </div>
+            <div class="product-info">
+              <h3>Roman Shades</h3>
+              <span>Blinds</span>
+              <p>Classic folding mechanism with modern fabrics.</p>
+            </div>
+          </div>
+          <div class="product-card reveal">
+            <div class="product-img">
+              <img
+                src="https://images.unsplash.com/photo-1617104424032-b9bd6972d0e4?q=80&w=2070&auto=format&fit=crop"
+                alt="Wooden Blinds"
+              />
+            </div>
+            <div class="product-info">
+              <h3>Timber Venetian</h3>
+              <span>Blinds</span>
+              <p>Natural wood slats for an earthy, warm tone.</p>
+            </div>
+          </div>
+          <div class="product-card reveal">
+            <div class="product-img">
+              <img
+                src="https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=2069&auto=format&fit=crop"
+                alt="Motorized"
+              />
+            </div>
+            <div class="product-info">
+              <h3>Smart Motion</h3>
+              <span>Automation</span>
+              <p>Remote controlled blinds for the smart home.</p>
+            </div>
+          </div>
+          <div class="product-card reveal">
+            <div class="product-img">
+              <img
+                src="https://images.unsplash.com/photo-1558603668-6570496b66f8?q=80&w=2064&auto=format&fit=crop"
+                alt="Upholstery"
+              />
+            </div>
+            <div class="product-info">
+              <h3>Custom Upholstery</h3>
+              <span>Bespoke</span>
+              <p>Matching cushions and furniture fabrics.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section-->
+    <section class="section-padding container" id="gallery">
+      <div class="section-header reveal">
+        <span>Inspiration</span>
+        <h2>Gallery</h2>
+      </div>
+      <div class="gallery-wrapper reveal">
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?q=80&w=2076"
+            alt="Gallery"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?q=80&w=2076"
+            alt="Gallery"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?q=80&w=2064"
+            alt="Gallery"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1618219908412-a29a1bb7b86e?q=80&w=2154"
+            alt="Gallery"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?q=80&w=2064"
+            alt="Gallery"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1631679706909-1844bbd07221?q=80&w=1992"
+            alt="Gallery"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section class="section-padding bg-white-section" id="contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <span>Let's Talk</span>
+          <h2>Get In Touch</h2>
+        </div>
+
+        <div class="contact-container reveal">
+          <div class="contact-info-box">
+            <h3>Contact Information</h3>
+            <p>
+              Ready to transform your space? Visit our showroom or send us a
+              message.
+            </p>
+
+            <div class="contact-details">
+              <div class="contact-row">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Shop 4, Luxury Plaza, Bandra West, Mumbai, 400050</span>
+              </div>
+              <div class="contact-row">
+                <i class="fas fa-phone-alt"></i>
+                <span>+91 91371 98164</span>
+              </div>
+              <div class="contact-row">
+                <i class="fas fa-envelope"></i>
+                <span>hello@auradrapes.com</span>
+              </div>
+            </div>
+
+            <div class="social-row">
+              <a href="#" class="social-icon"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="social-icon"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="social-icon"
+                ><i class="fab fa-pinterest-p"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="contact-form-box">
+            <form class="contact-form">
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="tel"
+                  class="form-control"
+                  placeholder="Phone Number"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <select class="form-control">
+                  <option value="" disabled selected>
+                    Service Interested In
+                  </option>
+                  <option value="curtains">Curtains</option>
+                  <option value="blinds">Blinds</option>
+                  <option value="consultation">Full Home Consultation</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <textarea
+                  class="form-control"
+                  placeholder="Message / Requirements"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                Send Enquiry
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Google Map -->
+    <div class="map-section reveal">
+      <iframe
+        src="https://maps.google.com/maps?q=Bandra%20West%2C%20Mumbai&t=&z=13&ie=UTF8&iwloc=&output=embed"
+        width="100%"
+        height="100%"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-logo">AURA DRAPES</div>
+      <p style="color: rgba(255, 255, 255, 0.7)">
+        Enhancing lifestyles through elegant design.
+      </p>
+      <div class="footer-bottom">© 2026 Aura Drapes. All Rights Reserved.</div>
+    </footer>
+
+    <!-- Whatsapp Floating Button -->
+    <a href="https://wa.me/919137198164" class="fab-whatsapp" target="_blank">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="./public/js/carousel.js"></script>
+    <script src="./public/js/scroll-animations.js"></script>
+    <script src="./public/js/dark-mode-toggle.js"></script>
+    <script src="./public/js/mobile-menu.js"></script>
+  </body>
+</html>
