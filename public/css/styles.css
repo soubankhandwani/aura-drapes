@@ -29,6 +29,7 @@
   --font-heading: "Playfair Display", serif;
   --font-body: "Lato", sans-serif;
   --padding-container: 8%;
+  --padding-arrows:4%;
   --border-radius: 12px;
   --nav-height: 80px;
 }
@@ -302,6 +303,40 @@ nav {
 .carousel-dot.active {
   background-color: var(--brand-primary);
   border-color: var(--brand-primary);
+}
+
+/* Carousel arrows */
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.35);
+  color: #fff;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 11;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+.carousel-arrow i {
+  font-size: 1rem;
+}
+.carousel-arrow:hover {
+  background: rgba(0, 0, 0, 0.55);
+  transform: translateY(-50%) scale(1.04);
+}
+.carousel-prev { left: calc(var(--padding-arrows)); }
+.carousel-next { right: calc(var(--padding-arrows)); }
+
+@media (max-width: 768px) {
+  .carousel-arrow { width: 40px; height: 40px; }
+  .carousel-prev { left: 16px; }
+  .carousel-next { right: 16px; }
 }
 
 /* --- ABOUT US --- */
